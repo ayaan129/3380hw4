@@ -191,6 +191,23 @@ ORDER BY
 
 Query for calculating the total call time and joins tables call record and customer. This ensures that each customer’s total call duration is calculated based on their call records.
 
+~~~
+SELECT 
+    p.payment_id, 
+    p.payment_date, 
+    p.payment_amount, 
+    ba.bank_name, 
+    ba.account_number, 
+    c.name AS customer_name
+FROM payment p
+JOIN bank_account ba ON p.bank_account_id = ba.bank_account_id
+JOIN bill b ON p.bill_id = b.bill_id
+JOIN customer c ON b.customer_id = c.customer_id
+ORDER BY p.payment_date DESC;
+~~~
+
+Payment history query fetches details about each payment made by a customer, including information about the payment method, the bank account, and the customer who made the payment. 
+
 
 
 
