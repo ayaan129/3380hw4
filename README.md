@@ -1,6 +1,8 @@
 # Cell Company Web App
 
-Our project is a web app for a database of a phone company that tracks the specifics of basic phone plans from the company's perspective. We are able to add a customer with an existing bank account into our database with a select phone plan that is offered. This data can also be deleted from our database. Payment history and bill summaries for customers can be found as well.
+Our project is a web app for a database of a phone company that tracks the specifics of basic phone plans from the company's perspective. We are able to add a customer with an existing bank account into our database with a select phone plan that is offered. This data can also be deleted from our database. Payment history and bill summaries for customers can be found as well. Along with many other actions of a cell phone company system.
+
+
 
 ### ER Diagram
 
@@ -105,7 +107,7 @@ Relationships:
 -- Each customer can have multiple call records, but each call record belongs to one customer this is reinforced by the customer_id foreign key in the call_record table.
 
 -- Relationship from customer to bill: One-to-Many
--- Each customer can have multiple bills, but each bill belongs to one customer this is reinforced bu the customer_id foreign key in the bill table.
+-- Each customer can have multiple bills, but each bill belongs to one customer this is reinforced by the customer_id foreign key in the bill table.
 
 -- Relationship from payment to bill: One-to-One
 -- Each payment is associated with one bill, and each bill is associated with one payment this is reinforced by the bill_id foreign key in the payment table.
@@ -113,5 +115,10 @@ Relationships:
 -- Relationship from payment to bank account: Many-to-One
 -- Each payment is made from one bank account, but multiple payments can be made from the same bank account this is reinforced by the bank_account_id foreign key in the payment table.
 ~~~
+
+### Transaction
+
+This transaction query handles the process of paying a customer's unpaid bill. Firstly by declaring an unpaid bill and locking its respective bank account for update. Then check the balance to see if the funds are sufficient enough to pay the bill. If yes, deduct the funds from the account 
+
 
 
