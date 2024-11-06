@@ -1,6 +1,6 @@
-# 3380hw4
+# Cell Company Web App
 
-Our project is a web app for a database of a phone company that tracks the specifics of basic phone plans. Data usage, bills, etc. 
+Our project is a web app for a database of a phone company that tracks the specifics of basic phone plans in the company's perspective. Data usage, bills, etc. 
 
 # ER Diagram
 
@@ -9,3 +9,5 @@ Our project is a web app for a database of a phone company that tracks the speci
 # Schema
 
 ![Schema](ddl3.sql)
+
+
