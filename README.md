@@ -189,7 +189,7 @@ ORDER BY
     total_call_time DESC;
 ~~~
 
-Query for calculating the total call time and joins call record on customer id.
+Query for calculating the total call time and joins tables call record and customer. This ensures that each customer’s total call duration is calculated based on their call records.
 
 
 
