@@ -94,7 +94,7 @@ Payment surrounds the payment of the bill considering the amount, the method of 
 
 
 Relationships:
-
+~~~
 -- Relationship from customer to phone plan: Many-to-One
 -- Each customer can have only one phone plan, but multiple customers can have the same phone plan this is reinforced by the phone_plan_id foreign key in the customer table.
 
@@ -112,6 +112,6 @@ Relationships:
 
 -- Relationship from payment to bank account: Many-to-One
 -- Each payment is made from one bank account, but multiple payments can be made from the same bank account this is reinforced by the bank_account_id foreign key in the payment table.
-
+~~~
 
 
