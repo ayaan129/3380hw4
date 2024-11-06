@@ -1,6 +1,6 @@
 # Cell Company Web App
 
-Our project is a web app for a database of a phone company that tracks the specifics of basic phone plans in the company's perspective. Data usage, bills, etc. 
+Our project is a web app for a database of a phone company that tracks the specifics of basic phone plans from the company's perspective. We are able to add a customer with an existing bank account into our database with a select phone plan that is offered. This data can also be deleted from our database. Payment history and bill summaries for customers can be found as well.
 
 ### ER Diagram
 
