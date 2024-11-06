@@ -4,7 +4,7 @@ Our project is a web app for a database of a phone company that tracks the speci
 
 # ER Diagram
 
-![ER Model](CellCompanyERD.pdf)
+![ER Model](CellCompanyERD.jpg)
 
 # Schema
 
