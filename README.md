@@ -208,6 +208,20 @@ ORDER BY p.payment_date DESC;
 
 Payment history query fetches details about each payment made by a customer, including information about the payment method, the bank account, and the customer who made the payment. 
 
+~~~
+SELECT 
+    c.customer_id, 
+    c.name, 
+    b.bill_date, 
+    b.total_amount, 
+    b.due_date, 
+    b.bill_status
+FROM customer c
+JOIN bill b ON c.customer_id = b.customer_id
+ORDER BY c.customer_id, b.bill_date;
+~~~
+The show bill query is used to show the summary of billing information for each customer. This query includes details like the bill date, the amount due, the due date, and the status of each bill, allowing customers or administrators to view billing history or upcoming due bills for individual customers.
+
 
 
 
