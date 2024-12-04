@@ -313,3 +313,18 @@ JOIN bill b ON c.customer_id = b.customer_id
 ORDER BY c.customer_id, b.bill_date;
 ~~~
 The show bill query is used to show the summary of billing information for each customer. This query includes details like the bill date, the amount due, the due date, and the status of each bill, allowing customers or administrators to view billing history or upcoming due bills for individual customers.
+
+
+### Group Work
+
+* Rindy Tuy
+  - fill in
+* AyaanAli Lakhani
+  - ERD sketches/models, Transaction code, Table creation, README, Group PDF, Testing app
+* Cristian Herrera
+  - ERD sketches/models, Transaction code, Table creation, Group PDF, Testing app, SQL queries 
+* FNU Abinanda Manoj
+  - ERD Models, Table creation, Transaction code, SQL queries, Group PDF, Testing app
+
+
+
